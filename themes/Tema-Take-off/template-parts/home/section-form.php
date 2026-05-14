@@ -14,11 +14,12 @@ $title_form_gen = [
 ];
 ?>
 
+<section class="w-full relative px-section px-25px md:px-0 pt-[45px] md:pb-[300px] pt-[50px] md:pt-[145px]  overflow-hidden">
+    
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/degradadoazul-3.png" alt="Degradado"
+         class="w-[70%]  absolute top-[-12%] left-0  z-0 pointer-events-none">
 
-<section class="w-full px-section px-25px md:px-0 pt-[45px] md:pb-[300px]">
-
-
-    <div class="md:px-[100px] md:w-[889px] px-[20px] md:px-0 w-full mx-auto bg-fondo shadow-[-6px_6px_26px_0px_#0F1317] pt-[47px] pb-[83px] flex flex-col items-center gap-[41px]">
+    <div class="relative z-30 md:px-[100px] md:w-[889px] px-[20px] md:px-0 w-full mx-auto bg-fondo shadow-[-6px_6px_26px_0px_#0F1317] pt-[47px] pb-[83px] flex flex-col items-center gap-[41px]">
 
         <?php if (!empty($title_form_gen['title']) || !empty($title_form_gen['active'])): ?>
 
@@ -29,13 +30,14 @@ $title_form_gen = [
                 <span class="text-colsecundary">
                     <?php echo nl2br(esc_html($title_form_gen['active'])); ?>
                 </span>
-
             </h2>
 
         <?php endif; ?>
+        
         <?php get_template_part('template-parts/global/form'); ?>
 
-        <hr class="w-full h-[1px] bg-[#F2F2F2] shadow-[-6px_6px_26px_0px_#ffff] border-0 ">
+        <hr class="w-full h-[1px] bg-[#F2F2F2] shadow-[-6px_6px_26px_0px_#ffff] border-0">
+        
         <div class="w-full grid grid-cols-1 md:grid-cols-[40%_60%] gap-[20px] justify-center items-center">
             <div>
                 <?php if ($img_form): ?>
@@ -56,6 +58,7 @@ $title_form_gen = [
                 <?php endif; ?>
             </div>
         </div>
+        
         <div class="w-full flex justify-center items-center">
             <?php if ($form_button_text && $form_button_link): ?>
                 <?php
@@ -72,6 +75,4 @@ $title_form_gen = [
             <?php endif; ?>
         </div>
     </div>
-
-
 </section>

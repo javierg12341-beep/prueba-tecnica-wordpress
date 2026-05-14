@@ -10,7 +10,7 @@ $feeling_button_link = get_field('feeling_button_link');
 
 ?>
 
-<section class="relative w-full overflow-hidden py-[50px] md:py-[145px] px-section md:px-0">
+<section class="relative w-full overflow-hidden pt-[50px] md:pt-[50px]  px-section md:px-0">
 
     <?php if ($feeling_title_grande): ?>
         <h2 id="feeling-bg-title"
