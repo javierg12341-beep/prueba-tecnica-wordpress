@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "./custom.css";
+
+@theme {
+  /* Colores */
+  --color-colprimary: #f08171;
+  --color-colsecundary: #F89485;
+  --color-coltitle: #F2F2F2;
+  --color-colflap: #ffffff;
+  --color-fondo: #232A33;
+  --color-fondobanner: #070B0F;
+  --color-colborder: #3c3c3c;
+  --color-fondosection: #181d24;
+
+  /* Fuentes */
+  --font-primary: "Plus Jakarta Sans", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+
+  /* Tamaños */
+   --text-grande: 4.375rem;
+  --text-split-flap: 2.5rem;
+  --text-titulosgrandes: 2.8125rem;
+  --text-titulos: 2.4375rem;
+  --text-mediana: 1.25rem;
+  --text-normal: 1.125rem;
+
+   /* Tamaños repsonsive*/
+  --text-split-repflap: 1.25rem;
+
+  /* Espacio en x responsive */
+   --spacing-section: 25px;
+}
